@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+    
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="listas.html">Listas</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="tabla.html">Tabla</a>
+                <a href="formulario.html">Formulario</a>        
+                <a href="http://www.google.com" target="_blank">Google</a>
+                
+            </nav>
+        
+    </header>
+    <main>
+        <seccion>
+            <h1>Definición de Formulario</h1>
+            <form action="https://formspree.io/f/xnqeonwe"  method="POST">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="ejemplo maria">
+                </div>
+                <br>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" maxlength="20" required>
+                </div>
+                <br>
+                <div>
+                    <label for="fechanac">Fecha de Nacimiento</label>
+                    <input type="date" name="fechanac" id="fechanac" >
+                </div>
+                <br>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad" max="80" min="10">
+                </div>
+                
+                <br>
+                
+               <div>
+                <label for="genero">Seleccione Genero</label>
+                <select name="genero" id="genero" >
+                    
+                    <option value="femenino">F</option>
+                    <option value="masculino">M</option>
+                    <option value="otro">Otro</option>
+                </select>
+               </div>
+               <hr>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <br>
+                
+                <div>
+                    <h2>Seleccione area a desarrollar</h2>
+                    <input type="radio" name="area" id="app" value="aplicaciones web">
+                    <label for="app">aplicaciones web</label>
+                    <br>
+                    <input type="radio" name="area" id="datos" value="analisis de datos">
+                    <label for="datos">analisis de datos</label>
+
+                </div>
+            <div>
+                <h3>seleccionar tecnologia</h3>
+                <input type="checkbox" name="tecnologia" id="html" value="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="tecnologia" id="Java" value="Java">
+                <label for="Java">Java</label>
+
+                <input type="checkbox" name="tecnologia" id="css" value="css">
+                <label for="css">CCS</label>
+                
+
+            </div>
+            <br>
+            <div>
+                <label for="navegador">elije navegador </label>
+                <input list="browser" id="navegador" name="navegador">
+                <datalist id="browser">
+                    <option value="crome"></option>
+                    <option value="edge"></option>
+                    <option value="safari"></option>
+                    <option value="opera"></option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>datos personales</legend>
+                    <div>
+                        <label for="telefono"></label>
+                        <input type="tel" name="telefono" id="telefono">
+                    </div>
+                    <div>
+                        <label for="documento"></label>
+                        <input type="file" name="documento" id="documento">
+                    </div>
+            
+                </fieldset>
+
+            </div>
+            <div>
+                <label for="comentario">comentario</label>
+                <br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            </div>
+<br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            </form>
+        </seccion>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
